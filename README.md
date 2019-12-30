@@ -17,7 +17,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.shucc:RxPermissions:v0.1'
+    implementation 'com.github.shucc:RxPermissions:v0.10.4'
 }
 ```
 
