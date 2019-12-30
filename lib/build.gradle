@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply from: 'jitpack.gradle'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -26,8 +25,8 @@ android {
 
 dependencies {
     implementation rootProject.ext.rxJava
-    implementation rootProject.ext.supportAnnotations
-    implementation rootProject.ext.supportFragment
+    implementation rootProject.ext.annotation
+    implementation rootProject.ext.appcompat
 
     testImplementation rootProject.ext.junit
     testImplementation rootProject.ext.mockito
@@ -35,7 +34,3 @@ dependencies {
     testImplementation rootProject.ext.robolectricShadowsSupport
     testImplementation rootProject.ext.khronosOpenGLApi
 }
-
-// Commented to use JitPack instead of bintray
-//apply from: 'install.gradle'
-//apply from: 'bintray.gradle'
